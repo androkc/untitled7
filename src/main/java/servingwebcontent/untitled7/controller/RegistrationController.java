@@ -1,8 +1,7 @@
-package servingwebcontent.controller;
+package servingwebcontent.untitled7.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -12,9 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
-import servingwebcontent.domain.User;
-import servingwebcontent.domain.dto.CaptchaResponseDto;
-import servingwebcontent.service.UserService;
+import servingwebcontent.untitled7.domain.User;
+import servingwebcontent.untitled7.domain.dto.CaptchaResponseDto;
+import servingwebcontent.untitled7.service.UserService;
 
 import javax.validation.Valid;
 import java.util.Collections;

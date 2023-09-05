@@ -1,8 +1,8 @@
-package servingwebcontent.repository;
+package servingwebcontent.untitled7.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import servingwebcontent.domain.User;
+import servingwebcontent.untitled7.domain.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Long> {

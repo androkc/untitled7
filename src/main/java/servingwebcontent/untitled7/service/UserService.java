@@ -1,17 +1,15 @@
-package servingwebcontent.service;
+package servingwebcontent.untitled7.service;
 
-import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import servingwebcontent.domain.Role;
-import servingwebcontent.domain.User;
-import servingwebcontent.repository.UserRepository;
+import servingwebcontent.untitled7.domain.Role;
+import servingwebcontent.untitled7.domain.User;
+import servingwebcontent.untitled7.repository.UserRepository;
 
 import java.util.*;
 import java.util.stream.Collectors;

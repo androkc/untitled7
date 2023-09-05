@@ -11,7 +11,7 @@ import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
-import servingwebcontent.untitled7.controller.MainController;
+import servingwebcontent.untitled7.controller.MessageController;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.authenticated;
@@ -29,11 +29,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Sql(value = {"/messages-list-after.sql", "/create-user-after.sql"}, executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
 //TestPropertySource - позволяет указать property file
 //Sql - указывает на то, какие скрипты надо выполнить перед тестами
-public class MainControllerTest {
+public class MessageControllerTest {
     @Autowired
     private MockMvc mockMvc;
     @Autowired
-    private MainController controller;
+    private MessageController controller;
 
     @Test
     public void mainPageTest() throws Exception {
@@ -57,9 +57,9 @@ public class MainControllerTest {
         this.mockMvc.perform(get("/main").param("filter", "my-tag"))
                 .andDo(print())
                 .andExpect(authenticated())
-                .andExpect(xpath("//div[@id='message-list']/div").nodeCount(2))
-                .andExpect(xpath("//div[@id='message-list']/div[@data-id='1']").exists())
-                .andExpect(xpath("//div[@id='message-list']/div[@data-id='3']").exists());
+                .andExpect(xpath("//*[@id='message-list']/div").nodeCount(2))
+                .andExpect(xpath("//*[@id='message-list']/div[@data-id='1']").exists())
+                .andExpect(xpath("//*[@id='message-list']/div[@data-id='3']").exists());
     }
 
     @Test

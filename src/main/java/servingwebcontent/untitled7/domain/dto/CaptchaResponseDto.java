@@ -1,4 +1,4 @@
-package servingwebcontent.domain.dto;
+package servingwebcontent.untitled7.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

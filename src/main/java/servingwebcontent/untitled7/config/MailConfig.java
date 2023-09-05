@@ -1,11 +1,10 @@
-package servingwebcontent.config;
+package servingwebcontent.untitled7.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import servingwebcontent.service.MailSender;
 
 import java.util.Properties;
 

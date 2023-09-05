@@ -1,4 +1,4 @@
-package servingwebcontent.domain;
+package servingwebcontent.untitled7.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 

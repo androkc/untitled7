@@ -1,8 +1,6 @@
-package servingwebcontent.domain;
+package servingwebcontent.untitled7.domain;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -15,9 +13,10 @@ import java.util.Set;
 
 
 @Entity
-@Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@Getter
+@Setter
 @Table(name = "usr")
 public class User implements UserDetails {
     @Id

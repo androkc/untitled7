@@ -1,4 +1,4 @@
-package servingwebcontent.controller;
+package servingwebcontent.untitled7.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -6,9 +6,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import servingwebcontent.domain.Role;
-import servingwebcontent.domain.User;
-import servingwebcontent.service.UserService;
+import servingwebcontent.untitled7.domain.Role;
+import servingwebcontent.untitled7.domain.User;
+import servingwebcontent.untitled7.service.UserService;
 
 import java.util.Map;
 
